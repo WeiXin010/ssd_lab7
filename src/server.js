@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
     <body>
       <h1>Browser and Timestamp Info</h1>
       <p id="browser-info">Loading browser details...</p>
-      <p id="timestamp">Fetching server timestamp...</p>
+      <p id="timestamp">Fetching server timestamps...</p>
       <script>
         // Display browser information
         const userAgent = navigator.userAgent;
