@@ -13,7 +13,7 @@
     plugins: {
       security: pluginSecurity,
       "security-node": pluginSecurityNode,
-      sanitized: pluginUnsantized
+      "no-unsanitized": pluginUnsantized
 
     },
     rules: {
