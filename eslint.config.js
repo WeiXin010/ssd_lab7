@@ -2,6 +2,7 @@
  import pluginJs from "@eslint/js";
  import pluginSecurity from "eslint-plugin-security";
  import pluginSecurityNode from "eslint-plugin-security-node";
+ import pluginUnsantized from "eslint-plugin-no-unsanitized"
 
  /** @type {import('eslint').Linter.Config[]} */
  export default [
@@ -12,12 +13,14 @@
     plugins: {
       security: pluginSecurity,
       "security-node": pluginSecurityNode,
+      sanitized: pluginUnsantized
 
     },
     rules: {
       ...pluginJs.configs.recommended.rules,
       ...pluginSecurity.configs.recommended.rules,
       ...pluginSecurityNode.configs.recommended.rules,
+      ...pluginUnsantized.configs.recommended.rules,
       "security/detect-eval-with-expression": "error",
     }
   }
