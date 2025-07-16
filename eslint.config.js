@@ -2,7 +2,7 @@
  import pluginJs from "@eslint/js";
  import pluginSecurity from "eslint-plugin-security";
  import pluginSecurityNode from "eslint-plugin-security-node";
- import pluginUnsantized from "eslint-plugin-no-unsanitized"
+ import pluginUnsantized from "eslint-plugin-no-unsanitized";
 
  /** @type {import('eslint').Linter.Config[]} */
  export default [
